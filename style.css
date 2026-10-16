@@ -1,0 +1,363 @@
+ /* General Page Styling */
+body {
+    background-color:#DFF5E1;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+}
+
+/* Keep BIG Tag Content at the Same Font Size */
+big {
+    font-size: inherit;
+}
+
+/* Shift Main Content Slightly Right */
+body > big {
+    display: block;
+    margin-left: 25px;
+}
+
+/* Header */
+header {
+    text-align: center;
+}
+
+/* Profile Section */
+.profile {
+    text-align: center;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 230px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Navigation Bar */
+.navbar {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-radius: 8px;
+}
+
+/* Navigation Links */
+.navbar a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 12px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Hover Effect */
+.navbar a:hover {
+    background-color: beige;
+    border-radius: 5px;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Section Navigation Spacing */
+section[id],
+article[id] {
+    scroll-margin-top: 20px;
+}
+
+/* Section Headings */
+h2 {
+    margin-top: 20px;
+}
+
+/* Horizontal Lines */
+hr {
+    border: none;
+    border-top: 1px solid #777;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Side-by-Side Boxes */
+.two-column-section,
+.skills-hobbies-container {
+    display: flex;
+    gap: 25px;
+    align-items: stretch;
+    width: 85%;
+    margin: 20px auto;
+}
+
+/* Individual Boxes */
+.info-box {
+    flex: 1;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 15px 20px;
+    border: 1px solid #8DE4BC;
+    border-radius: 8px;
+    background-color: #EAF8ED;
+    overflow-wrap: anywhere;
+}
+
+/* Box Headings */
+.info-box h2 {
+    margin-top: 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #8DE4BC;
+}
+
+/* Personal Information and Education Tables */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+/* Table Cells */
+.info-table td {
+    padding: 7px 5px;
+    text-align: left;
+    vertical-align: top;
+}
+
+/* Keep Labels on One Line */
+.info-table td:first-child {
+    white-space: nowrap;
+}
+
+/* Colon Column */
+.info-table td:nth-child(2) {
+    padding-left: 3px;
+    padding-right: 5px;
+}
+/* Align Personal Information box */
+#personal {
+    width: 100%;
+    max-width: 1100px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+/* Education Links */
+.info-table a,
+.document-list a {
+    color: #0645AD;
+    text-decoration: underline;
+}
+
+.info-table a:hover,
+.document-list a:hover {
+    color: #0B6E3B;
+}
+
+/* Academic Documents */
+.document-list {
+    margin-top: 15px;
+}
+
+.document-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #C6E9D0;
+}
+
+.document-item:last-child {
+    border-bottom: none;
+}
+
+.document-item p {
+    margin: 8px 0 0;
+}
+
+/* Academic Performance Section */
+#performance {
+    width: 85%;
+    margin: 20px auto;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+/* Academic Performance Table */
+.performance-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Table Caption */
+.performance-table caption {
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+/* Table Cells */
+.performance-table th,
+.performance-table td {
+    border: 1px solid black;
+    padding: 16px 20px;
+}
+
+/* Table Header */
+.performance-table th {
+    background-color:#DFF5E1;
+}
+
+/* Alternate Table Rows */
+.performance-table tbody tr:nth-child(even) {
+    background-color:#DFF5E1;
+}
+
+/* Skills and Hobbies */
+.skills-hobbies-container ul {
+    padding-left: 22px;
+    line-height: 1.8;
+}
+
+/* Contact Details Section */
+#contact {
+    width: 85%;
+    margin: 20px auto;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+/* Contact Form */
+#contact form {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+/* Form Labels */
+.form-group > label {
+    margin-right: 8px;
+}
+
+/* Text and Email Inputs */
+input[type="text"],
+input[type="email"] {
+    padding: 7px;
+    margin: 3px;
+    font-size: 14px;
+}
+
+/* Radio Buttons and Checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 5px;
+}
+
+/* Fieldsets */
+fieldset.form-group {
+    padding: 10px;
+    border: 1px solid #777;
+}
+
+fieldset legend {
+    padding: 0 5px;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    padding: 8px 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid #777;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Submit Button Hover */
+button[type="submit"]:hover {
+    background-color: #6FD8A8;
+}
+
+/* Footer - No Separate Background */
+footer {
+    background-color: transparent;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 800px) {
+    body {
+        padding: 10px;
+    }
+
+    body > big {
+        margin-left: 0;
+    }
+
+    .two-column-section,
+    .skills-hobbies-container {
+        flex-direction: column;
+        width: 100%;
+        gap: 15px;
+    }
+
+    .info-box {
+        width: 100%;
+    }
+
+    #performance,
+    #contact {
+        width: 100%;
+    }
+
+    .performance-table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .performance-table th,
+    .performance-table td {
+        padding: 8px 5px;
+    }
+
+    .info-table td {
+        padding: 5px;
+    }
+
+    .navbar {
+        gap: 5px;
+    }
+
+    .navbar a {
+        padding: 8px;
+    }
+}
+/* White background for all portfolio sections */
+#personal,
+#education,
+#documents,
+#skills,
+#hobbies {
+    background-color:white;
+}
